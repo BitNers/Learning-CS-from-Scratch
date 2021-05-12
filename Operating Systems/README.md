@@ -2,7 +2,9 @@
 
 ## Prologue
 
-    This section will talk about Operating System. You will learn about what are Processes, Memory Management, Bus, Hardware, Linux Shell, and et cetera.
+    This section will talk about Operating System. 
+    
+    You will learn about what are Processes, Memory Management, Bus, Hardware, Linux Shell, and et cetera.
 
 -----
 
@@ -12,9 +14,12 @@
 **What is Operating Systems?**
 
     A computer system has many resources (hardware and software), which may be require to complete a task. 
-    The commonly required resources are input/output devices, memory, file storage space, CPU etc. 
+
+    The commonly required resources are input/output devices, memory, file storage space, CPU et cetera. 
+
     The operating system acts as a manager of the above resources and allocates them to specific programs and users, whenever necessary to perform a particular task. 
     Therefore operating system is the resource manager i.e. it can manage the resource of a computer system internally. 
+
     The resources are processor, memory, files, and I/O devices. In simple terms, an operating system is the interface between the user and the machine.
 
 There's two views of Operating System:
@@ -24,7 +29,7 @@ There's two views of Operating System:
 
  - System View
 
-        Operating system can be viewed as a resource allocator also. A computer system consists of many resources like - hardware and software - that must be managed efficiently. The operating system acts as the manager of the resources, decides between conflicting requests, controls execution of programs etc.
+        Operating system can be viewed as a resource allocator also. A computer system consists of many resources like - hardware and software - that must be managed efficiently. The operating system acts as the manager of the resources, decides between conflicting requests, controls execution of programs et cetera.
  
 
 The Tasks of an Operating System are:
@@ -166,26 +171,34 @@ Following are some of the most widely used types of Operating system:
         - Enhanced performance
         - Execution of several tasks by different processors concurrently, increases the system's throughput without speeding up the execution of a single task.
         - If possible, system divides task into many subtasks and then these subtasks can be executed in parallel in different processors. 
-            Thereby speeding up the execution of single tasks.
+        
+        Thereby speeding up the execution of single tasks.
 
 
 **Desktop Systems**
 
     Earlier, CPUs and PCs lacked the features needed to protect an operating system from user programs. 
+
     PC operating systems therefore were neither multiuser nor multitasking. 
     However, the goals of these operating systems have changed with time; instead of maximizing CPU and peripheral utilization, the systems opt for maximizing user convenience and responsiveness.
+
     These systems are called Desktop Systems and include PCs running Microsoft Windows and the Apple Macintosh.
+
     Operating systems for these computers have benefited in several ways from the development of operating systems for mainframes.
 
     Microcomputers were immediately able to adopt some of the technology developed for larger operating systems. 
+
     On the other hand, the hardware costs for microcomputers are sufficiently low that individuals have sole use of the computer, and CPU utilization is no longer a prime concern. 
+
     Thus, some of the design decisions made in operating systems for mainframes may not be appropriate for smaller systems.
 
 
 **Distributed Operating System**
 
     The motivation behind developing distributed operating systems is the availability of powerful and inexpensive microprocessors and advances in communication technology.
+
     These advancements in technology have made it possible to design and develop distributed systems comprising of many computers that are inter connected by communication networks.
+
     The main benefit of distributed systems is its low price/performance ratio.
 
 
@@ -204,15 +217,20 @@ Following are some of the most widely used types of Operating system:
             Server Systems can be broadly categorized as: Compute Servers and File Servers.
 
                 - Compute Server systems, provide an interface to which clients can send requests to perform an action, in response to which they execute the action and send back results to the client.
+
                 - File Server systems, provide a file-system interface where clients can create, update, read, and delete files.
 
         Peer-to-Peer Systems
             The growth of computer networks - especially the Internet and World Wide Web (WWW) – has had a profound influence on the recent development of operating systems. 
+
             When PCs were introduced in the 1970s, they were designed for personal use and were generally considered standalone computers.
+
             With the beginning of widespread public use of the Internet in the 1990s for electronic mail and FTP, many PCs became connected to computer networks.
 
             In contrast to the Tightly Coupled systems, the computer networks used in these applications consist of a collection of processors that do not share memory or a clock. 
-            Instead, each processor has its own local memory. The processors communicate with one another through various communication lines, such as high-speed buses or telephone lines. 
+
+            Instead, each processor has its own local memory. The processors communicate with one another through various communication lines, such as high-speed buses or telephone lines.
+
             These systems are usually referred to as loosely coupled systems ( or distributed systems).
 
 
@@ -227,10 +245,15 @@ Following are some of the most widely used types of Operating system:
     Clustering is usually performed to provide high availability.
 
     A layer of cluster software runs on the cluster nodes. Each node can monitor one or more of the others. 
-        If the monitored machine fails, the monitoring machine can take ownership of its storage, and restart the application(s) that were running on the failed machine. The failed machine can remain down, but the users and clients of the application would only see a brief interruption of service.
+        
+    If the monitored machine fails, the monitoring machine can take ownership of its storage, and restart the application(s) that were running on the failed machine. 
+    
+    The failed machine can remain down, but the users and clients of the application would only see a brief interruption of service.
 
-    Clustered technology is rapidly changing. Clustered system's usage and it's features should expand greatly as Storage Area Networks(SANs). 
+    Clustered technology is rapidly changing. Clustered system's usage and it's features should expand greatly as Storage Area Networks(SANs).
+
     SANs allow easy attachment of multiple hosts to multiple storage units. 
+
     Current clusters are usually limited to two or four hosts due to the complexity of connecting the hosts to shared storage.         
 
 -----
@@ -287,9 +310,6 @@ The computer loads the program from Disk and store at RAM, making an active enti
 * Static variables has your values preserved even after they are out of their scope.
 
 
-
-
-
 Now that we know what is a process, we need to understand their differente states. Remember the processes are active entities, that means they can be in any of the following states:
 
         - NEW -> The process is being created. The OS is allocating resources. 
@@ -320,12 +340,12 @@ After that, they gonna be in RUNNING STATE, which can be TERMINATED or WAITING.
 As we talked before, the process is an active entity, which means they have a block control for attributes such as memory, and registers. Each process is a Data Structure which contains the following.
 
         - Process ID -> A.K.A PID, is the identification for Process in a System.
-        - Process State -> It can be Running, or Ready, etc.
+        - Process State -> It can be Running, or Ready, et cetera.
         - CPU Registers and Program Counter -> Holds the address of the next instruction to be executed for that process.
         - CPU Scheduling -> Priority information and pointers for scheduling queues (We gonna see this later)
-        - Memory Management -> Pages/Segment Tables, Heap and Stack, etc.
-        - Accounting Information -> User and Kernel CPU usage, limits, etc.
-        - I/O Status information -> Devices allocated, open file tables, etc.
+        - Memory Management -> Pages/Segment Tables, Heap and Stack, et cetera.
+        - Accounting Information -> User and Kernel CPU usage, limits, et cetera.
+        - I/O Status information -> Devices allocated, open file tables, et cetera.
 
 -----
 
@@ -338,6 +358,7 @@ The prime idea of Process Scheduling is to keep the CPU busy all the time, to de
 **Scheduling will fell into two general categories:**
         
     - Pre-emptive -> When the currently executing process gives up the CPU voluntarily.
+    
     - Non Pre-empetive -> When the OS decides to favour another process, pre-empting the currently executing process.
 
 
@@ -349,7 +370,9 @@ All processes, upon entering into the system, are stored in the Job Queue. Proce
 A new process is initially put in the READY queue. It waits in the READY queue until it is selected for execution(or dispatched). Once the process is assigned to the CPU and is executing, one of the following several events can occur:
 
     - The process could issue an I/O request, and then be placed in the I/O queue.
+
     - The process could create a new subprocess and wait for its termination.
+
     - The process could be removed forcibly from the CPU, as a result of an interrupt, and be put back in the READY queue.
 
 In the first two cases, the process eventually switches from the waiting state to the READY state, and is then put back in the READY queue. A process continues this cycle until it terminates, at which time it is removed from all queues and has its PCB and resources deallocated.
@@ -366,8 +389,11 @@ In the first two cases, the process eventually switches from the waiting state t
 
         Long term scheduler runs less frequently. 
         Long Term Schedulers decide which program must get into the job queue.
+
         From the job queue, the Job Processor, selects processes and loads them into the memory for execution. 
+
         Primary aim of the Job Scheduler is to maintain a good degree of Multiprogramming. 
+
         An optimal degree of Multiprogramming means the average rate of process creation is equal to the average departure rate of processes from the execution memory.
 
 
@@ -379,8 +405,10 @@ In the first two cases, the process eventually switches from the waiting state t
 
 **Medium Term Scheduler**
 
-        This scheduler removes the processes from memory (and from active contention for the CPU), and thus reduces the degree of multiprogramming. 
+        This scheduler removes the processes from memory (and from active contention for the CPU), and thus reduces the degree of multiprogramming.
+
         At some later time, the process can be reintroduced into memory and its execution van be continued where it left off. This scheme is called swapping. 
+
         The process is swapped out, and is later swapped in, by the medium term scheduler.
 
     
@@ -395,7 +423,11 @@ Swapping may be necessary to improve the process mix, or because a change in mem
 Switching the CPU to another process requires saving the state of the old process and loading the saved state for the new process. This task is known as a Context Switch.
         
 
-    The context of a process is represented in the Process Control Block(PCB) of a process; it includes the value of the CPU registers, the process state and memory-management information. When a context switch occurs, the Kernel saves the context of the old process in its PCB and loads the saved context of the new process scheduled to run.Context switch time is pure overhead, because the system does no useful work while switching.
+    The context of a process is represented in the Process Control Block(PCB) of a process; it includes the value of the CPU registers, the process state and memory-management information. 
+
+    When a context switch occurs, the Kernel saves the context of the old process in its PCB and loads the saved context of the new process scheduled to run.
+    
+    Context switch time is pure overhead, because the system does no useful work while switching.
 
     Its speed varies from machine to machine, depending on the memory speed, the number of registers that must be copied, and the existence of special instructions(such as a single instruction to load or store all registers). Typical speeds range from 1 to 1000 microseconds.
     
